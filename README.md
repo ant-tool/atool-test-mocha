@@ -1,6 +1,6 @@
-# atool-test
+# atool-test-mocha
 
-> `note`: Tests with browser, use version 0.4.x. 
+> `note`: Tests with browser, use [atool-test](https://github.com/ant-tool/atool-test)
 
 [![NPM version](https://img.shields.io/npm/v/atool-test-mocha.svg?style=flat)](https://npmjs.org/package/atool-test-mocha)
 [![Build Status](https://img.shields.io/travis/ant-tool/atool-test-mocha.svg?style=flat)](https://travis-ci.org/ant-tool/atool-test-mocha)
