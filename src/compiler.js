@@ -2,7 +2,7 @@ import fs from 'fs';
 const babel = require('babel-core');
 const origJs = require.extensions['.js'];
 
-const donothing = () => null;
+const noop = () => null;
 
 require.extensions['.js'] = (module, filename) => {
   if (filename.indexOf('node_modules/') >= 0) {
@@ -19,8 +19,8 @@ require.extensions['.js'] = (module, filename) => {
   return module._compile(code, filename);
 };
 
-require.extensions['.css'] = donothing;
-require.extensions['.less'] = donothing;
-require.extensions['.scss'] = donothing;
+require.extensions['.css'] = noop;
+require.extensions['.less'] = noop;
+require.extensions['.scss'] = noop;
 
-require.extensions['.html'] = donothing;
+require.extensions['.html'] = noop;
