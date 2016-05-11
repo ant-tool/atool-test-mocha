@@ -1,5 +1,9 @@
 # History
 
+## 0.1.2
+- 修复 matchMedia 报错问题;
+- 增加 .jsx 文件编译;
+
 ## 0.1.1
 - 修复源码中有 require 样式和 html 文件导致测试报错问题;
 

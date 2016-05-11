@@ -1,6 +1,6 @@
 {
   "name": "atool-test-mocha",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Unit testing tool based on mocha & sinon & chai, run tests with jsdom",
   "keywords": [
     "testing",

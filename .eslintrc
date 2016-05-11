@@ -4,7 +4,8 @@
     "no-console": [0],
     "space-before-function-paren": [2, "never"],
     "max-len": [0],
-    "prefer-template": [0]
+    "prefer-template": [0],
+    "no-param-reassign": ["error", { "props": false }]
   },
   "ecmaFeatures": {
     "experimentalObjectRestSpread": true
