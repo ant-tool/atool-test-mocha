@@ -1,5 +1,8 @@
 # History
 
+## 0.1.3
+- 修复 tnpm2, tnpm4 下 preset 报错问题;
+
 ## 0.1.2
 - 修复 matchMedia 报错问题;
 - 增加 .jsx 文件编译;
