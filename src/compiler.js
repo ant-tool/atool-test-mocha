@@ -12,7 +12,11 @@ const jsCompiler = ext => {
 
     const content = fs.readFileSync(filename, 'utf-8');
     const code = babel.transform(content, {
-      presets: ['es2015', 'react', 'stage-0'],
+      presets: [
+        require.resolve('babel-preset-es2015'),
+        require.resolve('babel-preset-react'),
+        require.resolve('babel-preset-stage-0'),
+      ],
       ast: false,
     }).code;
 
