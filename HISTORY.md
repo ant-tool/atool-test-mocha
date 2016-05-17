@@ -1,5 +1,8 @@
 # History
 
+## 0.1.4
+- 添加 babel-plugin-add-module-exports;
+
 ## 0.1.3
 - 修复 tnpm2, tnpm4 下 preset 报错问题;
 
