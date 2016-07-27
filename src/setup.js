@@ -29,3 +29,6 @@ global.expect = chai.expect;
 // https://github.com/chaijs/chai/issues/107
 global.should = undefined;
 global.should = chai.should();
+
+require('babel-polyfill');
+
