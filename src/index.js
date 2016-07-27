@@ -21,11 +21,17 @@ export default function(config) {
 
   const mochaArgs = config.args.join(' ');
   if (config.coverage) {
-    mochaBin = join(require.resolve('mocha'), '../bin/_mocha');
+    mochaBin = join(__dirname, '../node_modules/.bin/_mocha');
+    if (!fs.existsSync(mochaBin)) {
+      mochaBin =join(require.resolve('mocha'), '../../.bin/_mocha');
+    }
     const istanbul = join(require.resolve('istanbul'), '../lib/cli.js');
     cmd = `node ${istanbul} cover ${mochaBin} -- --compilers .:${compiler} --require ${setupFile} ${mochaArgs}`;
   } else {
-    mochaBin = join(require.resolve('mocha'), '../bin/mocha');
+    mochaBin = join(__dirname, '../node_modules/.bin/mocha');
+    if (!fs.existsSync(mochaBin)) {
+      mochaBin =join(require.resolve('mocha'), '../../.bin/mocha');
+    }
     cmd = `${mochaBin} --compilers .:${compiler} --require ${setupFile} ${mochaArgs}`;
   }
 
