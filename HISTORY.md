@@ -1,5 +1,9 @@
 # History
 
+## 0.1.5
+- 添加 babel-polyfill;
+- 修复 windows 下面报错；
+
 ## 0.1.4
 - 添加 babel-plugin-add-module-exports;
 
