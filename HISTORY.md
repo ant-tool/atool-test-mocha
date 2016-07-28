@@ -1,5 +1,9 @@
 # History
 
+## 0.1.6
+- update dependencies;
+- use `babel-register` as compiler ；
+
 ## 0.1.5
 - 添加 babel-polyfill;
 - 修复 windows 下面报错；
