@@ -1,5 +1,8 @@
 # History
 
+## 0.1.7
+- add `--custom-compiler` ；
+
 ## 0.1.6
 - update dependencies;
 - use `babel-register` as compiler ；
