@@ -7,7 +7,7 @@ const cwd = process.cwd();
 
 export default function(config) {
   const setupFile = join(__dirname, 'setup.js');
-  const compiler = join(__dirname, './compiler');
+  const compiler = config.customCompiler ? join(cwd, config.customCompiler) : join(__dirname, 'compiler');
 
   let mochaBin;
   let cmd;
