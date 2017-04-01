@@ -28,7 +28,8 @@ npm install atool-test-mocha --save-dev
 ## Options
 
 - `--coverage`: coverage output;
-- support mocha cli options (`--bail`, `--timeout`, `--watch`, `--recursive`...) 
+- `--custom-compiler`: set path of custom compiler file;
+- support mocha cli options (`--bail`, `--timeout`, `--watch`, `--recursive`...)
 
 ## Custom testDir
 
