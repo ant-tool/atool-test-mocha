@@ -42,6 +42,10 @@ export default function(config) {
     stdio: 'inherit',
   });
 
+  cp.on('close', (code) => {
+    process.exit(code);
+  });
+
   cp.on('exit', () => {
     if (config.coverage) {
       console.log();

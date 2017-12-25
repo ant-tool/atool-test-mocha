@@ -24,3 +24,4 @@ dist
 coverage
 *.log
 lib
+yarn.lock
