@@ -39,7 +39,7 @@
     "chai": "~3.5.0",
     "commander": "~2.9.0",
     "istanbul": "^1.1.0-alpha.1",
-    "jsdom": "^8.4.1",
+    "jsdom": "^11.5.1",
     "mocha": "^3.0.0-2",
     "sinon": "~1.17.3",
     "sinon-chai": "~2.8.0"
