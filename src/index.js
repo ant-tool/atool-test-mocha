@@ -25,8 +25,8 @@ export default function(config) {
     if (!fs.existsSync(mochaBin)) {
       mochaBin = join(require.resolve('mocha'), '../../.bin/_mocha');
     }
-    const istanbul = join(require.resolve('istanbul'), '../lib/cli.js');
-    cmd = `node ${istanbul} cover ${mochaBin} -- --compilers .:${compiler} --require ${setupFile} ${mochaArgs}`;
+    const nyc = join(__dirname, '../node_modules/.bin/nyc');
+    cmd = `${nyc} --reporter=html --reporter=text --reporter=lcov ${mochaBin} --compilers .:${compiler} --require ${setupFile} ${mochaArgs}`;
   } else {
     mochaBin = join(__dirname, '../node_modules/.bin/mocha');
     if (!fs.existsSync(mochaBin)) {
@@ -49,7 +49,7 @@ export default function(config) {
   cp.on('exit', () => {
     if (config.coverage) {
       console.log();
-      console.log('You can see more detail in coverage/lcov-report/index.html');
+      console.log('You can see more detail in coverage/index.html');
       console.log();
     }
   });

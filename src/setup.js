@@ -1,6 +1,7 @@
-const jsdom = require('jsdom').jsdom;
-global.document = jsdom('<!doctype html><html><body></body></html>');
-global.window = document.defaultView;
+const JSDOM = require('jsdom').JSDOM;
+const dom = new JSDOM('<!doctype html><html><body></body></html>');
+global.window = dom.window;
+global.document = window.document;
 global.navigator = window.navigator;
 
 function propagateToGlobal() {
@@ -31,4 +32,3 @@ global.should = undefined;
 global.should = chai.should();
 
 require('babel-polyfill');
-

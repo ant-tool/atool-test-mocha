@@ -1,5 +1,10 @@
 # History
 
+## 0.2.0
+
+- use `nyc` to generate coverage;
+- update deps
+
 ## 0.1.7
 - add `--custom-compiler` ；
 

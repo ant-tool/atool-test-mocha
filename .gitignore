@@ -25,3 +25,4 @@ coverage
 *.log
 lib
 yarn.lock
+.nyc_output
