@@ -1,5 +1,10 @@
 const JSDOM = require('jsdom').JSDOM;
-const dom = new JSDOM('<!doctype html><html><body></body></html>');
+const dom = new JSDOM('<!doctype html><html><body></body></html>', {
+  url: 'https://example.org/',
+  referrer: 'https://example.com/',
+  contentType: 'text/html',
+});
+
 global.window = dom.window;
 global.document = window.document;
 global.navigator = window.navigator;
