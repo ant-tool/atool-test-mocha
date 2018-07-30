@@ -1,5 +1,9 @@
 # History
 
+## 0.2.1
+
+- fix: JSDOM 需要传入 url
+
 ## 0.2.0
 
 - use `nyc` to generate coverage;
